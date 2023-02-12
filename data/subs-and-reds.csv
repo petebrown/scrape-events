@@ -1407,8 +1407,8 @@ game_id,player_id,min_on,min_off,min_so,event_details
 734262,51911,67,,,(67) J Norwood(F)10
 734262,63703,51,,,(51) C Stockton(F)23
 734262,74288,82,,,(82) E Sousa(M)34
-734262,78063,67,,,(67) A Collins(M)39
 734262,52497,51,,,(51) A Cook(F)9
+734262,78063,67,,,(67) A Collins(F)39
 734176,41399,86,,,(86) L Vaughan(D)2
 734176,43779,26,,,(26) J Harris(M)8
 734176,63703,72,,,(72) C Stockton(F)23
@@ -2303,7 +2303,7 @@ game_id,player_id,min_on,min_off,min_so,event_details
 672666,65015,70,,,15(M)J Kirby (70)
 672666,55480,83,,,17(M)M Power (83)
 672666,36541,72,,,18(M)S Jennings (72)
-656719,53112,112,,,6(D)L Palmer (112)
+656719,53112,112,,,6(M)L Palmer (112)
 656719,34287,112,,,10(M)A Robinson (112)
 656719,50757,100,,,26(F)J Akpa Akpro (100)
 656719,26297,112,,,12(M)D Harrison (112)
@@ -2395,7 +2395,7 @@ game_id,player_id,min_on,min_off,min_so,event_details
 653389,53459,65,,,22(M)A Bell-Baggie (65)
 653389,58154,64,,,20(F)M O'Halloran (64)
 653389,26762,43,,,25(F)M Sidibe (43)
-653389,53112,64,,,6(D)L Palmer (64)
+653389,53112,64,,,6(M)L Palmer (64)
 653389,63703,43,,,16(F)C Stockton (43)
 653389,55423,65,,,18(F)D Amoo (65)
 653399,53459,89,,,(89) A Bell-Baggie(M)22
@@ -2438,7 +2438,7 @@ game_id,player_id,min_on,min_off,min_so,event_details
 653297,26762,80,,,25(F)M Sidibe (80)
 653297,53459,67,,,22(M)A Bell-Baggie (67)
 653297,63703,80,,,16(F)C Stockton (80)
-653463,53112,79,,,(79) L Palmer(D)6
+653463,53112,79,,,(79) L Palmer(M)6
 653463,34287,65,,,(65) A Robinson(M)10
 653463,26762,65,,,(65) M Sidibe(F)25
 653463,26297,79,,,(79) D Harrison(M)12
@@ -2454,7 +2454,7 @@ game_id,player_id,min_on,min_off,min_so,event_details
 653582,26297,70,,,(70) D Harrison(M)12
 653582,55158,69,,,(69) P Corry(M)24
 653582,55423,81,,,(81) D Amoo(F)18
-653582,53112,,,6,(s/o 6) L Palmer(D)6
+653582,53112,,,6,(s/o 6) L Palmer(M)6
 667475,63703,64,,,(64) C Stockton(F)16
 667475,55423,64,,,(64) D Amoo(F)18
 667475,47926,64,,,(64) P Black(D)3
@@ -2500,7 +2500,7 @@ game_id,player_id,min_on,min_off,min_so,event_details
 653250,53233,46,,,(46) J Jervis(F)24
 653250,26297,46,,,(46) D Harrison(M)12
 653250,63703,90,,,(90) C Stockton(F)16
-653583,53112,86,,,(86) L Palmer(D)6
+653583,53112,86,,,(86) L Palmer(M)6
 653583,55851,79,,,(79) A McGurk(F)11
 653583,63703,64,,,(64) C Stockton(F)16
 653583,47926,64,,,(64) P Black(D)3
@@ -6229,12 +6229,12 @@ game_id,player_id,min_on,min_off,min_so,event_details
 859352,101331,62,,,(62) J Hawkes(M)11
 859352,61258,89,,,(89) J Nolan(M)16
 859352,71462,62,,,(62) P Lewis(M)22
-860658,125105,80,,,8(M)R McAlear (80)
+860658,125105,80,,,8(F)R McAlear (80)
 860658,61258,80,,,16(M)J Nolan (80)
 861839,76981,45,,,14(D)J Turnbull (45)
 861839,117422,82,,,4(M)L O'Connor (82)
 861839,104921,72,,,6(M)C Merrie (72)
-861839,125105,45,,,8(M)R McAlear (45)
+861839,125105,45,,,8(F)R McAlear (45)
 861839,144033,82,,,17(F)R Hughes (82)
 861839,104933,72,,,25(F)J Mumbongo (72)
 860672,76981,77,,,(77) J Turnbull(D)14
@@ -6248,8 +6248,8 @@ game_id,player_id,min_on,min_off,min_so,event_details
 860681,101331,65,,,11(M)J Hawkes (65)
 860681,104933,74,,,25(F)J Mumbongo (74)
 860695,104921,45,,,6(M)C Merrie (45)
-860695,125105,73,,,8(M)R McAlear (73)
 860695,71462,45,,,22(M)P Lewis (45)
+860695,125105,73,,,8(F)R McAlear (73)
 860695,117422,45,,,4(M)L O'Connor (45)
 860695,101331,73,,,11(M)J Hawkes (73)
 860695,61258,45,,,16(M)J Nolan (45)
@@ -6257,15 +6257,15 @@ game_id,player_id,min_on,min_off,min_so,event_details
 869121,61258,58,,,(58) J Nolan(M)16
 869121,101331,58,,,(58) J Hawkes(M)11
 869121,71462,70,,,(70) P Lewis(M)22
-860708,125105,69,,,(69) R McAlear(M)8
 860708,61258,69,,,(69) J Nolan(M)16
+860708,125105,69,,,(69) R McAlear(F)8
 860708,140587,80,,,(80) E Nevitt(F)20
 860708,71462,69,,,(69) P Lewis(M)22
 860708,144033,69,,,(69) R Hughes(F)17
 860708,128729,80,,,(80) J Burton(F)27
-860716,125105,64,,,8(M)R McAlear (64)
 860716,101331,70,,,11(M)J Hawkes (70)
 860716,61258,64,,,16(M)J Nolan (64)
+860716,125105,64,,,8(F)R McAlear (64)
 860716,140587,69,,,20(F)E Nevitt (69)
 860716,125460,70,,,26(D)D Simeu (70)
 860716,71462,64,,,22(M)P Lewis (64)
@@ -6297,8 +6297,8 @@ game_id,player_id,min_on,min_off,min_so,event_details
 860781,101331,75,,,(75) J Hawkes(M)11
 860781,140587,86,,,(86) E Nevitt(F)20
 860781,60649,89,,,(89) N Byrne(D)19
-860781,125105,86,,,(86) R McAlear(M)8
 860781,71462,86,,,(86) P Lewis(M)22
+860781,125105,86,,,(86) R McAlear(F)8
 860781,144033,75,,,(75) R Hughes(F)17
 860792,68138,82,,,7(M)K Morris (82)
 860792,71462,73,,,22(M)P Lewis (73)
@@ -6324,8 +6324,8 @@ game_id,player_id,min_on,min_off,min_so,event_details
 871069,117422,60,,,4(M)L O'Connor (60)
 871069,71462,60,,,22(M)P Lewis (60)
 871069,60649,78,,,19(D)N Byrne (78)
-871069,125105,60,,,8(M)R McAlear (60)
 871069,101331,45,,,11(M)J Hawkes (45)
+871069,125105,60,,,8(F)R McAlear (60)
 871069,140587,60,,,20(F)E Nevitt (60)
 871069,165326,89,,,32(F)S Taylor (89)
 860853,68138,89,,,7(M)K Morris (89)
@@ -6355,8 +6355,8 @@ game_id,player_id,min_on,min_off,min_so,event_details
 860913,101331,87,,,(87) J Hawkes(M)11
 860913,58504,87,,,(87) K Hemmings(F)10
 860913,104933,70,,,(70) J Mumbongo(F)25
-860913,125105,87,,,(87) R McAlear(M)8
 860913,71462,70,,,(70) P Lewis(M)22
+860913,125105,87,,,(87) R McAlear(F)8
 860913,128729,87,,,(87) J Burton(F)27
 860914,101331,87,,,11(M)J Hawkes (87)
 860914,104933,58,,,25(F)J Mumbongo (58)
@@ -6368,7 +6368,7 @@ game_id,player_id,min_on,min_off,min_so,event_details
 860929,104933,58,,,25(F)J Mumbongo (58)
 860949,101331,86,,,(86) J Hawkes(M)11
 860949,104933,45,,,(45) J Mumbongo(F)25
-860949,125105,86,,,(86) R McAlear(M)8
+860949,125105,86,,,(86) R McAlear(F)8
 860949,140587,45,,,(45) E Nevitt(F)20
 860961,104933,46,,,(46) J Mumbongo(F)25
 860961,128729,46,,,(46) J Burton(F)27
