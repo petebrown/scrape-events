@@ -32,7 +32,7 @@ def scrape_starter_events(event):
     matches = re.search(regex, event)
     min_off = matches.group(1)
     min_so = matches.group(2)
-    return [min_off, min_so]
+    return min_off, min_so
 
 def scrape_sub_events(event):
     regex = r"\((\d+)-?(\d+)?(?:, s\/o )?(\d+)?\)"
@@ -41,9 +41,9 @@ def scrape_sub_events(event):
         min_on = matches.group(1)
         min_off = matches.group(2)
         min_so = matches.group(3)
-        return [min_on, min_off, min_so]
+        return min_on, min_off, min_so
 
-def get_events(doc, game_id, side):
+def scrape_events(doc, game_id, side):
     match_events = []
 
     subs_off = doc.select(f'.lineup .{side} .firstTeam .replaced')
@@ -54,10 +54,7 @@ def get_events(doc, game_id, side):
 
     for event in starter_events:
         player_id = get_player_id(event)
-        events = scrape_starter_events(event.text)
-        
-        min_off = events[0]
-        min_so = events[1]
+        min_off, min_so = scrape_starter_events(event.text)
         
         record = create_record(game_id, player_id, min_off, min_so, min_on = None)
         
@@ -68,11 +65,7 @@ def get_events(doc, game_id, side):
         matches = re.search(regex, event.text)
         if matches:
             player_id = get_player_id(event)
-            events = scrape_sub_events(event.text)
-        
-            min_on = events[0]
-            min_off = events[1]
-            min_so = events[2]
+            min_on, min_off, min_so = scrape_sub_events(event.text)
             
             record = create_record(game_id, player_id, min_off, min_so, min_on)
         
@@ -80,7 +73,7 @@ def get_events(doc, game_id, side):
 
     return match_events
 
-def scrape_events(game_dict):
+def get_match_page(game_dict):
     url = game_dict["url"]
     venue = game_dict["venue"]
     game_id = url.split("=")[1]
@@ -95,7 +88,7 @@ def scrape_events(game_dict):
     r = requests.get(url)
     doc = BeautifulSoup(r.text, 'html.parser')
 
-    events = get_events(doc, game_id, side)
+    events = scrape_events(doc, game_id, side)
     return events
 
 def async_scraping(scrape_function, urls):
@@ -113,11 +106,15 @@ def clean_events_list(input_list):
     events = [event for sublist in events for event in sublist]
     return events
 
+def get_events_list(games):
+    events = async_scraping(get_match_page, games)
+    events = clean_events_list(events)
+    return events
+
 def main():
     games = get_game_list()
 
-    events = async_scraping(scrape_events, games)
-    events = clean_events_list(events)
+    events = get_events_list(games)
     
     df = pd.DataFrame(events)
     
