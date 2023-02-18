@@ -2,7 +2,7 @@ name: scrape-events
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 23 * * 6'
+    - cron: '15 17 * * 6'
     - cron: '15 3 * * 1,2,3,4,6'
 jobs:
   scrape:
