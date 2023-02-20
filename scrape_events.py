@@ -112,7 +112,7 @@ def get_events_list(games):
     return events
 
 def add_corrections_to_df(df):
-    corrections = pd.read_csv("manual-updates.csv")
+    corrections = pd.read_csv("./manual-updates.csv")
     df = pd.concat([df, corrections])
     return df
 
